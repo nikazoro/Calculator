@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <script src="script.js" defer></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<main class="main">
+    <div class="calculator">
+        <div class="screen">
+            <div class="screen-last" id="lastOperationScreen"></div>
+            <div class="screen-current" id="currentOperationScreen">0</div>
+        </div>
+    </div>
+    <div class="buttons-grid">
+
+        <button class="btn btn-red span-2" data-operator id="clearBtn" onclick="this.blur();" >CLEAR</button>
+
+        <button class="btn btn-blue span-2" data-operator id="deleteBtn" onclick="this.blur();" >DELETE</button>
+
+        <button class="btn" data-number onclick="this.blur();">7</button>
+        <button class="btn" data-number onclick="this.blur();">8</button>
+        <button class="btn" data-number onclick="this.blur();">9</button>
+        <button class="btn" data-operator onclick="this.blur();">/</button>
+
+        <button class="btn" data-number onclick="this.blur();">4</button>
+        <button class="btn" data-number onclick="this.blur();">5</button>
+        <button class="btn" data-number onclick="this.blur();">6</button>
+        <button class="btn" data-operator onclick="this.blur();">*</button>
+
+        <button class="btn" data-number onclick="this.blur();">1</button>
+        <button class="btn" data-number onclick="this.blur();">2</button>
+        <button class="btn" data-number onclick="this.blur();">3</button>
+        <button class="btn" data-operator onclick="this.blur();">-</button>
+
+        <button class="btn" id="pointBtn" onclick="this.blur();">.</button>
+        <button class="btn" data-number onclick="this.blur();">0</button>
+        <button class="btn" data-operator id="equalsBtn" onclick="this.blur();">=</button>
+        <button class="btn" data-operator onclick="this.blur();">+</button>
+    </div>
+</main>
+<footer class="footer">
+    <p>
+        Copyright ©
+        <script>
+            document.write(new Date().getFullYear())
+        </script>
+        nikazoro
+    </p>
+    <a href="https://github.com/nikazoro" target="_blank">
+        <i class="fab fa-github"></i
+        ></a>
+</footer>
+</body>
+</html>
